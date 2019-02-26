@@ -1,0 +1,884 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-top: 0px;
+  font-family: 'proximanova';
+}
+
+.defaultimage {
+  scr: url('../img/sitio/defaultimage.jpg');
+}
+
+/*Fonts*/
+@font-face {
+  font-family: 'proximanova';
+  src: url('../fonts/Proxima-Nova-Cond-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+ }
+
+ /* Button */
+.button_vdoblege{
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 2rem 6rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.button_vdoblege:hover{
+  background-color: #FAFAFA;
+  color: #000000;
+  border-radius: 30px;
+  border-color: #000000;
+}
+
+.button_vdoblege2{
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 2rem 6rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.button_vdoblege2:hover{
+  background-color: #FAFAFA;
+  color: #000000;
+  border-radius: 30px;
+  border-color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+  .button_vdoblege2{
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 4px;
+    width: 25%;
+  }
+
+  .button_vdoblege2:hover{
+    background-color: #FAFAFA;
+    color: #000000;
+    border-radius: 30px;
+    border-color: #000000;
+  }
+}
+
+/* Navbar */
+
+.navbar{
+  height: 30px;
+  font-size: 2rem;
+}
+
+.navbar_vdoblege{
+  background-color: #FAFAFA;
+  color: hsla(0, 100%, 100%, 0.52);
+  margin-bottom: 0px;
+}
+
+.icon-bar{
+  background-color: #FAFAFA;
+}
+
+.navbar-brand img{
+  max-height: 45px;
+  padding-top:1px;
+}
+
+.navbar-brand{
+ padding-top:1px;
+}
+
+/* Header */
+.header_doblege{
+  text-align: left;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vh 5vw 0 5vw;
+}
+
+.textoheader h1{
+  position: absolute;
+  top: 50%;
+  left: 93%;
+  transform: translate(-93%, -50%);
+  color: #000000;
+  font-size: 8rem;
+}
+
+.header_doblege__image-top {
+  background-image: url('../img/sitio/headerdoblege.png');
+  position: relative;
+}
+
+.paginacompleta{
+
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+@media(max-width:991px) {
+
+.header_doblege{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.textoheader h1{
+  position: absolute;
+  top: 50%;
+  left: 93%;
+  transform: translate(-93%, -50%);
+  color: #000000;
+  font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width : 767px){
+
+.header_doblege {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  }
+
+.textoheader h1{
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-80%, -70%);
+  color: #000000;
+  font-size: 4rem;
+  }
+
+.header_doblege__image-top{
+  display:block;
+  height: 200px;
+  }
+}
+
+/* Listado de Post de Blog en Front-page */
+
+.textocajas{
+  text-align: center;
+  color:black;
+}
+
+.container1{
+  width: calc(33% - 5px);
+  overflow:hidden;
+  height: fit-content;
+  margin:3px;
+  display:block;
+  position:relative;
+  float:left;
+  box-sizing: border-box;
+}
+
+.title{
+  position:absolute;
+  display:block;
+  cursor:pointer;
+  top: 65%;
+  display: none;
+  left: 50%;
+  margin-right: -20%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: normal;
+  background-color: #707070;
+  text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0,0,0,0.15);
+  transition-duration: .3s;
+}
+
+.textofecha{
+  position:absolute;
+  top: 20%;
+  cursor:pointer;
+  max-width: 80%;
+  text-align:center;
+  left: 50%;
+  text-shadow: 1px 5px 10px black;
+  font-size: 1.5em;
+  display:none;
+  background-color: #707070;
+  margin-right: -50%;
+  transition-duration: .3s;
+  transform: translate(-50%, -50%)
+}
+
+.container1:hover img{
+  transform: scale(1.2);
+  transition-duration: .3s;
+  filter: grayscale(50%);
+  opacity: .7;
+}
+
+.container1:hover span{
+  color:white;
+  display: block;
+  transition-duration: .3s;
+}
+
+@media only screen and (max-width: 991px) {
+.container1 {
+  width: calc(50% - 6px);
+  text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+.container1 {
+  width: calc(99% - 6px);
+  text-align: center;
+  }
+}
+
+/* autor */
+.autor{
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 35vh;
+  background-position: right bottom;
+  display: block;
+}
+
+.ribetelargoautor{
+  width: 100%;
+}
+
+.autor h1{
+  color: #FAFAFA;
+  font-size: 5em;
+  padding-top: 8%
+}
+
+.autor__caracteristicas {
+  text-align: left;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7vh 5vw 0 5vw;
+}
+
+.autor__caracteristicas h2 {
+  font-size: 3em;
+}
+
+.autor__caracteristicas > hr {
+  visibility: hidden;
+}
+
+.autor__caracteristicas h3 {
+  font-size:  2.8em;
+}
+
+.autor__caracteristicas p {
+ padding: 1rem 8vw 1rem 0;
+ font-size: 1.5rem;
+}
+
+.autor__caracteristicas__image-top {
+  background-image: url('../img/sitio/doblege2.jpg');
+}
+
+@media only screen and (max-width : 991px){
+
+  .autor {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .autor__caracteristicas h2 {
+    font-size: 2em;
+  }
+
+  .autor__caracteristicas p {
+    padding: 2rem 10vw 1rem 10vw;
+  }
+
+  .autor__caracteristicas hr {
+    visibility: visible;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100px;
+  }
+
+  .autor__caracteristicas {
+    padding: 0 2rem 4rem 15vw;
+    height: auto;
+  }
+
+  .autor__caracteristicas h3 {
+    font-size: 1.5em;
+  }
+
+  .autor__caracteristicas p {
+    padding: 1rem 8vw 1rem 0;
+  }
+
+  .autor__caracteristicas__image-top {
+    height: 40vh;
+  }
+}
+
+
+/* Ribete Exposiciones y Concursos */
+
+.expo{
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 35vh;
+  background-position: right bottom;
+}
+
+.expo h1{
+  color: #FAFAFA;
+  font-size: 5em;
+  padding-top: 8%;
+}
+
+.paginacompleta2{
+  padding-top: 10%;
+  background-color:#FAFAFA;
+  padding-bottom: 6%;
+}
+
+@media only screen and (max-width : 991px){
+
+  .expo {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Exposiciones */
+
+.exposiciones{
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 350px;
+  padding-top: 100px;
+  background-position: right bottom;
+}
+
+.cajablanca{
+  border: 1px solid;
+  padding: 15px;
+  background-color: #FAFAFA;
+  box-shadow: 10px 10px;
+}
+
+.container2{
+  width: calc(30% - 3px);
+  overflow:hidden;
+  height: fit-content;
+  margin:20px;
+  display:block;
+  position:relative;
+  float:left;
+  box-sizing: border-box;
+}
+
+.container2:hover img{
+  transform: scale(1.2);
+  transition-duration: .3s;
+  filter: grayscale(50%);
+  opacity: .7;
+}
+
+.container2:hover span{
+  color:white;
+  display: block;
+  transition-duration: .3s;
+}
+
+@media only screen and (max-width: 900px) {
+.container2 {
+  width: calc(50% - 6px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+.container2 {
+  width: 100%;
+  }
+}
+
+/* Sección Textos */
+/* Ribete Exposiciones y Concursos */
+
+.textoribete{
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 50vh;
+  padding-top: 100px;
+  background-position: right bottom;
+  padding-top: 200px;
+}
+
+.textoribete h1{
+  color: #FAFAFA;
+  background-color: hsla(0, 0%, 10%, .8);;
+  font-size: 6rem;
+  margin-top: 20rem;
+  padding-top: 1%;
+  border-bottom:1px solid #CCC;
+  width:100%;
+  float:left;
+  background-color:
+}
+
+.textoribete2{
+  color: #FAFAFA;
+  background-color: hsla(0, 0%, 10%, .8);;
+  font-size: 1em;
+  width:100%;
+}
+
+.paginacompleta3{
+  padding-top: 10%;
+  background-color:#FAFAFA;
+  padding-bottom: 10%;
+}
+
+.box1{
+  width: calc(32% - 4px);
+  height: 300px;
+  overflow: hidden;
+  float: left;
+  word-break: break-all;
+  word-spacing: -1px;
+  margin-left: 15px; /* or 0px */
+  background-color: #fafafa;
+  padding: 15px;
+  transition: all 0.5s ease-in;
+  font-size: 1.8rem;
+}
+
+.box1:hover{
+  height: 400px;
+  margin-top: -50px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-track {background-color: rgba(25, 25, 25, 0.2);}
+::-webkit-scrollbar-thumb {background-color: rgba(25, 25, 25, 0.2);}
+
+#demotext {
+  color: #000000;
+  background: #FFFFFF;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.cajablanca{
+  border: 1px solid;
+  padding: 15px;
+  background-color: #FAFAFA;
+  box-shadow: 10px 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+.cajablanca {
+  width: calc(90% - 6px);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+  }
+
+.box1:hover{
+  height: 400px;
+  margin-top: 40px;
+  overflow-y: scroll;
+  }
+
+.textoribete{
+  padding-top: 20%;
+  margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+.cajablanca {
+  width: calc(90% - 6px);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+  }
+
+.box1:hover{
+  height: 400px;
+  margin-top: 40px;
+  overflow-y: scroll;
+  }
+
+.textoribete{
+  padding-top: 20%;
+  margin-bottom: 0px;
+  }
+}
+
+/* Single-page Blog (NO FRONTPAGE) */
+
+div#post-jumbotron {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 60%;
+}
+
+.cuerpoblog {
+  padding-top: 0.1rem;
+  margin: 0;
+}
+
+.cuerpoblog p {
+  padding: 1rem 14vw;
+  font-size: 2rem;
+  line-height: 2.1;
+  color: hsla(0, 0%, 30%, .8);
+}
+
+.cuerpoblog__img__buttons{
+  max-width: 30px;
+  color: #FAFAFA;
+}
+
+.cuerpoblog__img__autor{
+  max-width: 200px;
+}
+
+.cuerpoblog > hr {
+  visibility: hidden;
+}
+
+.cuerpoblog h3 {
+  font-size:  2.8em;
+}
+
+.cuerpoblog__entradasblog{
+  line-height: 2.1;
+  background-color: hsla(0, 0%, 90%, .8);
+}
+
+.cuerpoblog__entradasblog__left p{
+  padding-left: 30%;
+  padding-right: 20%;
+  font-size: 2.5rem;
+}
+
+.cuerpoblog__entradasblog__right p{
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width : 767px){
+
+.cuerpoblog {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cuerpoblog p {
+  padding: 2rem 10vw 1rem 10vw;
+}
+
+.cuerpoblog hr {
+  visibility: visible;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100px;
+}
+
+.cuerpoblog h3 {
+  font-size: 1.5em;
+}
+
+.cuerpoblog h1 {
+  font-size: 2.5em;
+}
+
+.cuerpoblog h2 {
+  font-size: 1.5em;
+}
+
+.cuerpoblog__inner {
+  padding: 0 2rem 4rem 15vw;
+  height: auto;
+}
+
+.cuerpoblog__inner p {
+  padding: 1rem 8vw 1rem 0;
+  }
+}
+
+/* Descripción / Pagina Doblege */
+
+.descripcion {
+  text-align: center;
+  padding-top: 0rem;
+  color: white;
+}
+
+.descripcion h2 {
+  font-size: 3em;
+}
+
+.descripcion p {
+  padding: 1rem 24vw;
+}
+
+.descripcion > hr {
+  visibility: hidden;
+}
+
+.descripcion__inner {
+  text-align: left;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  padding: 10vh 5vw 0 5vw;
+}
+
+.descripcion__inner h3 {
+  font-size:  2.8em;
+}
+
+.descripcion__inner p {
+  padding: 1rem 8vw 1rem 0;
+  font-size: 1.7rem;
+}
+
+.descripcion__inner__image-top {
+  background-image: url('../img/sitio/doblege3.jpg');
+}
+
+.descripcion__inner__image-top2 {
+  background-image: url('../img/2018_09_24/42058437_2051496504882147_2413143051888230400_n.jpg');
+}
+
+.descripcion__inner__image-bottom {
+  background-image: url('../img/sitio/victor1.jpg');
+}
+
+@media only screen and (max-width : 767px){
+
+  .descripcion {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .descripcion h2 {
+    font-size: 2em;
+  }
+
+  .descripcion p {
+    padding: 2rem 10vw 1rem 10vw;
+  }
+
+  .descripcion hr {
+    visibility: visible;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100px;
+  }
+
+  .descripcion__inner {
+    padding: 0 2rem 4rem 15vw;
+    height: auto;
+  }
+
+  .descripcion__inner h3 {
+    padding-top: 5rem;
+    font-size: 1.5em;
+  }
+
+  .descripcion__inner p {
+    padding: 1rem 8vw 1rem 0;
+  }
+
+  .descripcion__inner__image-top {
+    display: block;
+    height: 20vh;
+  }
+
+  .descripcion__inner__image-bottom {
+    display:none;
+  }
+}
+
+/*Footer */
+
+.footer {
+  background-color: #000000;
+  color:#FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 400px;
+  padding-top: 10px;
+  background-position: right bottom;
+}
+
+.logo2{
+  padding-top: 90px;
+  width: 25rem;
+}
+
+.iconos{
+  padding-top: 150px;
+  letter-spacing: 2.5em;
+  color: #000000;
+  padding-left: 60px;
+}
+
+.formulariocss{
+  padding:0px;
+  border:0px;
+  background-color: #000000;
+}
+
+.formulariocss2{
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #FFFFFF;
+  background-color:#000000;
+}
+
+.formulariocss3{
+  background-color:#000000;
+}
+
+.colorcss1{
+  background-color:#000000;
+  padding-bottom:80px;
+}
+
+.colorcss2{
+  color: #FAFAFA;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+.logofooter{
+  padding-top: 0px;
+  padding-bottom: 60px;
+  }
+
+  .formulariocss3{
+  padding-top: 60px;
+  }
+
+  .iconos{
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 0px;
+  width: 410px;
+  }
+}
+
+/*Slide */
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#slidy-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#slidy-container{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* PAGE-TEXTOS */
+
+.paginacompleta4{
+  padding-bottom: 200px;
+}
+
+.espaciobajotitulo{
+  padding-bottom: 60px;
+}
+
+/* SHARING */
+
+.sharing{
+  padding-top: 60px;
+  text-align: center;
+  letter-spacing: 2.5em;
+}
+
+
+/* MAPA */
+
+#map {
+    height: 20vh;
+    width: 100%;
+    font-size: 2rem;
+}
+
+#image{
+    margin: 0 auto;
+    height: 10em;
+}
+
+.container3{
+  width: calc(30% - 3px);
+  overflow:hidden;
+  height: fit-content;
+  margin:20px;
+  display:block;
+  position:relative;
+  float:left;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+.container3 {
+  width: calc(90% - 2px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+.container3 {
+  width: calc(90% - 2px);
+  }
+}
