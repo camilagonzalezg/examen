@@ -86,4 +86,3 @@ Una layout que cuente con:
 * Optimización de imágenes con Smushit
 * Uso plugin Autoptimize
 * Uso plugin W3 Total Cache
-# examen
